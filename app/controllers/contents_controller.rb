@@ -6,7 +6,7 @@ class ContentsController < ApplicationController
 
                     #ci sono le 7 azioni principali: index, show,  new edit create update e destroy. Che richiamano alle 4 azioni principali del CRUD. La prima è l'index. La pagina view dell'index la troviamo in views. Apriamo il controller e l'index in due finestre
   def index                              
-    @contents = Content.all
+    @contents = Content.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 4 ) #modificato per mettere i contenuti in ordine dall'ultimo al più vecchio, DESC sta per decrescente, cioè dal più nuovo al più vecchio
   end
                     
   def show
