@@ -5,39 +5,57 @@
 
     <h1>Listing Contents</h1>
                 <!-- abbiamo prima una tabella con gli elementi -->
-    <table>
-      <thead>
-        <tr>
-          <th>immagine</th>
-          <th>Titolo</th>
-          <th>Descrizione</th>
-          <th>User_id</th>  
-          <th>Prezzo</th>
-          <th colspan="3"></th>
-        </tr>
-      </thead>
+<div class="row">
 
-      <tbody>
-        <% @contents.each do |content| %>   <!-- questo è un embedd ruby, ossia un ruby nell'html che si scrivono con maggiore e percentuale. Poi se c'è l'uguale è un operazione mostrata, altrimenti è processata senza mostrarla.
+   <% @contents.each do |content| %>   <!-- questo è un embedd ruby, ossia un ruby nell'html che si scrivono con maggiore e percentuale. Poi se c'è l'uguale è un operazione mostrata, altrimenti è processata senza mostrarla.
         
         Quell'operazione prevede una @contents. E' una variabile che abbiamo creato noi creando i contenuti (l'ha creata ruby con lo scaffold). La possiamo trovare nel controller sotto index, dove dice @contents= Content.all  Con questa variabile si fa si che si vada nel database e si mostrano tutti gli elementi che ci sono. Poi qui, dopo @contents c'è .each , quello è un metodo che crea un loop, ossia per tutti i contenuti che abbiamo bisogna fare qualcosa, difatti c'è scritto il do, ossia fai qualcosa. Quel qualcosa ora si chiama content, ma lo puoi chiamare come vuoi. Quel content poi fa si che quel qualcosa sia quello scritto sotto prima di maggiore %end% >, ossia il titolo la descrizione e il prezzo. E poi ci sono i link  -->
-          <tr>
-            <td><%= image_tag content.cover.url(:thumb) %></td>   <!-- è il loop per l'immagine -->
-            <td><%= content.titolo %></td>
-            <td><%= content.descrizione %></td>
-            <td><%= content.user.nome %></td>     <!-- è il loop per la user -->
-            <td><%= content.prezzo %></td>
-            <td><%= link_to 'Show', content %></td>    <!-- questi link sono i link che compaiono dopo le informazioni nella tabella -->
-              
-        <% if content.user == current_user %>
-              
-            <td><%= link_to 'Edit', edit_content_path(content) %></td>   <!-- quel content tra parentesi in questo link ti dice che devi modificare il content di quell'id -->
-            <td><%= link_to 'Destroy', content, method: :delete, data: { confirm: 'Are you sure?' } %></td> <!-- qui c'è solo il content e non il path e tra parentesi, è uno shortcut, ossia un abbreviazione. Poi c'è il metodo perchè poi deve cancellare -->
-          </tr>
-         <% end %> 
-        <% end %>
-      </tbody>
-    </table>
+
+            <div class="col s3">
+
+               <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <%= image_tag content.cover.url, class:"activator" %>
+                        
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4"><%= content.titolo %><i class="material-icons right">more_vert</i></span>
+                        <div>
+                          <span>
+                            Venduto da <%= content.user.nome %>    
+                          </span>
+                          <span class="right">
+                             <%= number_to_currency(content.prezzo) %> 
+                          </span>
+
+                        </div>
+                        <br>
+                        <div class ="center"><%= link_to 'Scopri di più', content, class: "btn" %> </div>
+                        
+                          <% if content.user == current_user %>
+                                  <br>
+                                   <div class="center"
+                                          <p><%= link_to 'Edit', edit_content_path(content) %>
+                                          <%= link_to 'Destroy', content, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+                                     </div>
+
+                            <% end %>
+                        
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><%= content.titolo %><i class="material-icons right">close</i></span>
+                        <p><%= content.descrizione %></p>
+                      </div>
+                </div>
+              </div>
+
+    <% end %> 
+</div>
+
+
+
+
+   
 
     <br>
 

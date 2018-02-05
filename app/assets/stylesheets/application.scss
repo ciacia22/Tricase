@@ -20,6 +20,15 @@ main {
   }
 
 .ilike-blue-container {
-    @extend .green, .lighten-4;
-    
+    @extend .green, .lighten-4;   
   }
+
+ .mostra-immagine {
+    padding-right: 5%;
+  }
+
+  .mostra_titolo {
+    margin-top: 0px;
+    font-size: 4em;
+  }
+
