@@ -1,4 +1,4 @@
-/Users/Gabriele/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20180207-70288-1tbl5e8.rb extconf.rb
+/Users/Gabriele/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20180211-30296-8zcnxp.rb extconf.rb
 checking for ffi.h... no
 checking for ffi.h in /usr/local/include,/usr/include/ffi... yes
 checking for ffi_call() in -lffi... yes
@@ -54,4 +54,4 @@ compiling StructByValue.c
 linking shared-object ffi_c.bundle
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20180207-70288-1yr9tv8
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20180211-30296-7gyfeh

@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20180207-70288-1beyamh
-sitelibdir = $(DESTDIR)./.gem.20180207-70288-1beyamh
+sitearchdir = $(DESTDIR)./.gem.20180211-30296-1wraojj
+sitelibdir = $(DESTDIR)./.gem.20180211-30296-1wraojj
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -82,7 +82,7 @@ CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS)  -O3 -Wno-error=shorten-64-to-32  -pipe  -DNOKOGIRI_USE_PACKAGED_LIBRARIES $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_ICONV_H -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32/include -I/Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/include/libxml2 -I/Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/include/libxml2 -I/Users/Gabriele/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags) "-DNOKOGIRI_LIBXML2_PATH=\"/Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7\"" "-DNOKOGIRI_LIBXML2_PATCHES=\"\"" "-DNOKOGIRI_LIBXSLT_PATH=\"/Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32\"" "-DNOKOGIRI_LIBXSLT_PATCHES=\"\""
+CPPFLAGS = -DHAVE_ICONV_H -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32/include -I/Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/include/libxml2 -I/Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/include/libxml2 -I/Users/Gabriele/.rbenv/versions/2.2.3/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags) "-DNOKOGIRI_LIBXML2_PATH=\"/Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7\"" "-DNOKOGIRI_LIBXML2_PATCHES=\"\"" "-DNOKOGIRI_LIBXSLT_PATH=\"/Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32\"" "-DNOKOGIRI_LIBXSLT_PATCHES=\"\""
 CXXFLAGS = $(CCDLFLAGS) $(cxxflags) $(ARCH_FLAG)
 ldflags  = -L. -L/Users/Gabriele/.rbenv/versions/2.2.3/lib  -fstack-protector
 dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
@@ -121,8 +121,8 @@ TOUCH = exit >
 
 preload = 
 
-libpath = /Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/lib /Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32/lib . $(libdir)
-LIBPATH =  -L/Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/lib -L/Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32/lib -L. -L$(libdir)
+libpath = /Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/lib /Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32/lib . $(libdir)
+LIBPATH =  -L/Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/lib -L/Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32/lib -L. -L$(libdir)
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -133,7 +133,7 @@ extout =
 extout_prefix = 
 target_prefix = /nokogiri
 LOCAL_LIBS = 
-LIBS =  /Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32/lib/libexslt.a -lm -liconv -lpthread -lz /Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/lib/libxml2.a /Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32/lib/libxslt.a -lm -liconv -lpthread -lz /Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/lib/libxml2.a -llzma -lpthread -ldl -lobjc  
+LIBS =  /Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32/lib/libexslt.a -lm -liconv -lpthread -lz /Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/lib/libxml2.a /Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32/lib/libxslt.a -lm -liconv -lpthread -lz /Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7/lib/libxml2.a -llzma -lpthread -ldl -lobjc  
 ORIG_SRCS = xml_comment.c xml_element_content.c html_element_description.c nokogiri.c xml_element_decl.c xml_node_set.c xml_namespace.c xml_encoding_handler.c xml_libxml2_hacks.c xml_relax_ng.c xml_sax_push_parser.c html_sax_parser_context.c xslt_stylesheet.c html_document.c xml_sax_parser_context.c xml_xpath_context.c html_entity_lookup.c xml_sax_parser.c xml_reader.c xml_syntax_error.c xml_node.c xml_attr.c html_sax_push_parser.c xml_schema.c xml_dtd.c xml_entity_decl.c xml_attribute_decl.c xml_io.c xml_entity_reference.c xml_processing_instruction.c xml_text.c xml_document_fragment.c xml_document.c xml_cdata.c
 SRCS = $(ORIG_SRCS) 
 OBJS = xml_comment.o xml_element_content.o html_element_description.o nokogiri.o xml_element_decl.o xml_node_set.o xml_namespace.o xml_encoding_handler.o xml_libxml2_hacks.o xml_relax_ng.o xml_sax_push_parser.o html_sax_parser_context.o xslt_stylesheet.o html_document.o xml_sax_parser_context.o xml_xpath_context.o html_entity_lookup.o xml_sax_parser.o xml_reader.o xml_syntax_error.o xml_node.o xml_attr.o html_sax_push_parser.o xml_schema.o xml_dtd.o xml_entity_decl.o xml_attribute_decl.o xml_io.o xml_entity_reference.o xml_processing_instruction.o xml_text.o xml_document_fragment.o xml_document.o xml_cdata.o

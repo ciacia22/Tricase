@@ -1,4 +1,4 @@
-/Users/Gabriele/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20180207-70288-r6ztmq.rb extconf.rb
+/Users/Gabriele/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20180211-30296-154rxrn.rb extconf.rb
 checking if the C compiler accepts ... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
 Building nokogiri using packaged libraries.
@@ -32,7 +32,7 @@ Extracting libxml2-2.9.7.tar.gz into tmp/x86_64-apple-darwin17.2.0/ports/libxml2
 Running 'configure' for libxml2 2.9.7... OK
 Running 'compile' for libxml2 2.9.7... OK
 Running 'install' for libxml2 2.9.7... OK
-Activating libxml2 2.9.7 (from /Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7)...
+Activating libxml2 2.9.7 (from /Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxml2/2.9.7)...
 ************************************************************************
 IMPORTANT NOTICE:
 
@@ -56,7 +56,7 @@ Extracting libxslt-1.1.32.tar.gz into tmp/x86_64-apple-darwin17.2.0/ports/libxsl
 Running 'configure' for libxslt 1.1.32... OK
 Running 'compile' for libxslt 1.1.32... OK
 Running 'install' for libxslt 1.1.32... OK
-Activating libxslt 1.1.32 (from /Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32)...
+Activating libxslt 1.1.32 (from /Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports/x86_64-apple-darwin17.2.0/libxslt/1.1.32)...
 checking for main() in -llzma... yes
 checking for xmlParseDoc() in libxml/parser.h... yes
 checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
@@ -167,8 +167,8 @@ size_t   strlen(const char *__s);
 1 warning generated.
 linking shared-object nokogiri/nokogiri.bundle
 Cleaning files only used during build.
-rm -rf /Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-apple-darwin17.2.0/ports
-rm -rf /Users/Gabriele/Desktop/Tricase/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports
+rm -rf /Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-apple-darwin17.2.0/ports
+rm -rf /Users/Gabriele/Desktop/sito/vendor/bundle/ruby/2.2.0/gems/nokogiri-1.8.2/ports
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20180207-70288-1beyamh/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20180211-30296-1wraojj/nokogiri

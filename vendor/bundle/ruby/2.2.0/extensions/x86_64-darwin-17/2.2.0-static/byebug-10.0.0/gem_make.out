@@ -1,4 +1,4 @@
-/Users/Gabriele/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20180207-70288-e44ih2.rb extconf.rb
+/Users/Gabriele/.rbenv/versions/2.2.3/bin/ruby -r ./siteconf20180211-30296-122z2mm.rb extconf.rb
 creating Makefile
 
 make "DESTDIR=" clean
@@ -12,4 +12,4 @@ compiling threads.c
 linking shared-object byebug/byebug.bundle
 
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180207-70288-1m68vdg/byebug
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180211-30296-g2gjbh/byebug

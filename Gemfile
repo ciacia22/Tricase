@@ -34,15 +34,13 @@ gem 'stripe'
 
 gem  'aasm'
 
-gem 'pg'
-
 group :development, :test do
 	gem 'byebug'
 	gem 'sqlite3'
 end
 
 group :production do
-	
+	gem 'pg'
 	gem 'rails_12factor'
 end	
 
