@@ -34,7 +34,6 @@ gem 'stripe'
 
 gem  'aasm'
 
-gem 'pg'
 
 group :development, :test do
 	gem 'byebug'
@@ -42,7 +41,7 @@ group :development, :test do
 end
 
 group :production do
-	gem 'pg'
+	gem "pg", "~> 0.18"
 	gem 'rails_12factor'
 end	
 
