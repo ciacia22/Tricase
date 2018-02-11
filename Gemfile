@@ -34,6 +34,8 @@ gem 'stripe'
 
 gem  'aasm'
 
+gem 'pg'
+
 group :development, :test do
 	gem 'byebug'
 	gem 'sqlite3'
